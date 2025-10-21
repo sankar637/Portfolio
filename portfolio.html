@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sankar | Full Stack Developer</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="navbar">
+      <div class="logo scroll-text"><a href="#">Sankar Sai Surya</a></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </div>
+  </header>
+
+  <!-- ===== HOME ===== -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <!-- <img src="sankar image1.jpg" alt="Profile" class="profile-pic" id="profile"> -->
+      <div class="profile-container">
+        <img src="sankar image1.jpg" alt="Profile" class="profile-pic" id="profile">
+        <div class="flights-container" id="flights-container"></div>
+      </div>
+      <h1>Hello, I'm <span class="highlight">Sankar Sai Surya</span></h1> 
+      <p><div class="logo scroll-text">Fullstack Developer| Web Designer | Tech Enthusiast </div></p>
+      <button class="btn" onclick="scrollToSection('contact')">Hire Me</button>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate Full Stack Developer who loves to design and build interactive, 
+      responsive web applications. I specialize in both front-end and back-end development 
+      and enjoy solving challenges through clean, efficient code. My goal is to create digital 
+      experiences that are not only functional but also visually stunning.
+    </p>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Python</div>
+      <div class="skill">Django</div>
+      <div class="skill">MySql</div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card" onclick="window.open('https://github.com/yourusername/project1')">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal portfolio built with HTML, CSS, and JS.</p>
+      </div>
+      <div class="project-card" onclick="window.open('https://github.com/sankar637/Banking-Management-System')">
+        <h3>Banking System</h3>
+        <p>Full stack banking app with secure transactions using Django.</p>
+      </div>
+      <div class="project-card" onclick="window.open('https://github.com/sankar637/Heart-Disease-')">
+        <h3>Heart Disease Predictor</h3>
+        <p>Machine Learning project predicting heart disease using Python.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section class="resume" id="resume">
+    <h2>My Resume</h2>
+    <p>You can download my resume below.</p><br><br>
+    <a href="sankar_pythondeveloper.pdf" download class="btn">Download Resume</a>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" onsubmit="sendMail(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Sankar.dev | All Rights Reserved</p>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
