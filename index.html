@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankar Sai Surya - CSE Student & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Sankar Sai Surya.web</a>
+            <div class="nav-actions">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark close-icon" onclick="toggleMenu()"></i>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-sun theme-toggle" id="theme-toggle"></i>
+                <i class="fa-solid fa-bars menu-icon" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" id="home">
+            <div class="hero-content container">
+                <div class="left-section">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1>Sankar Sai Surya Perugu</h1>
+                    <h2 class="dynamic-text">a <span id="element" class="highlight"></span></h2>
+                    <p class="bio-summary">
+                        CSE student at Sri Sarathi Institute of Engineering and Technology with a passion for problem-solving and software development.
+                        Proficient in <strong>Python and OOP</strong> principles. Seeking
+                        opportunities to grow technical expertise.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="sankar_pythondeveloper.pdf" download="Sankar_Resume" class="btn primary-btn">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                        <a href="https://github.com/sankar637" target="_blank" class="btn secondary-btn">
+                            <i class="fa-brands fa-github"></i> Visit Github
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/sankar637" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sankar-perugu-ab2520301/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a 
+                            href="mailto:sankarperugu@gmail.com?subject=Message from Sankar&body=Hello Sankar,%0D%0A%0D%0A[Your message here]"
+                            title="Send me an email"
+                        >
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="profile-image-container">
+                        <img src="sankar pic.png" alt="Sankar Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <h2 class="section-heading">About Me</h2>
+                <div class="about-content">
+                    <p>
+                        I am an ambitious Computer Science and Engineering student at Sri Sarathi Institute of Engineering and Technology, Nuzvid, focused on building strong foundations in Object-Oriented Programming (OOP) to develop innovative software solutions.
+                    </p>
+                    <p>
+                        My core skills include Python, HTML, CSS, and JavaScript, which I use to design and build functional, user-friendly applications. I’m passionate about writing clean, modular code and exploring new technologies that enhance web development.
+                    </p>
+                    <p>I have applied these skills in projects such as creating a Python-based application deployed with WebAssembly, demonstrating my ability to combine technical knowledge with creative problem-solving to deliver effective solutions.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+                <h2 class="section-heading">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fa-solid fa-code"></i> Languages</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>HTML / CSS / JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fa-solid fa-rocket"></i> Frameworks & Concepts</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Django</li>
+                            <li>DSA Basics & OOP</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fa-solid fa-database"></i> Databases & Tools</h3>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>Git</li>
+                            <li>MS Excel & MS Word</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <h2 class="section-heading">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Calculator</h3>
+                        <p class="project-desc">
+                            A responsive web-based calculator built using HTML, CSS, and JavaScript to perform basic arithmetic operations.
+                            Demonstrates strong skills in front-end development, DOM manipulation, and modular coding practices.
+                        <ul class="project-features">
+                            <li>Performs basic arithmetic operations (addition, subtraction, multiplication, division)</li>
+                            <li>Built with HTML, CSS, and JavaScript for a clean and interactive interface</li>
+                            <li>Error handling for invalid inputs and divide-by-zero scenarios</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/sankar637/Calculator" target="_blank"
+                                class="project-link"><i class="fa-brands fa-github"></i> Source
+                                Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Professional Developer Portfolio</h3>
+                        <p class="project-desc">
+                            A modern, responsive personal portfolio designed to showcase academic history, technical
+                            skills, and key projects to potential employers.
+                        </p>
+                        <ul class="project-features">
+                            <li>Engineered using clean, semantic <strong>HTML5, CSS3, and JavaScript</strong> from
+                                scratch.</li>
+                            <li>Includes dedicated sections for About Me, <strong>Skills (React, Django)</strong>,
+                                Education, and Contact information.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/sankar637/Portfolio" target="_blank"
+                                class="project-link"><i class="fa-brands fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="education-section section-padding" id="education">
+            <div class="container">
+                <h2 class="section-heading">Education</h2>
+                <div class="education-grid">
+
+                    <div class="edu-card">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>B.Tech. in Computer Science & Engineering</h3>
+                        <p class="institute">Sri Sarathi Institute of Engineering and Technology, Nuzvidu</p>
+                        <p class="duration">2021 - 2025</p>
+                        <p class="grade">CGPA: 7.5/10</p>
+                    </div>
+
+                    <div class="edu-card">
+                        <i class="fa-solid fa-school"></i>
+                        <h3>Intermediate (MPC)</h3>
+                        <p class="institute">AP Balayogi Gurukulam, Narsapuram</p>
+                        <p class="duration">2029 - 2021</p>
+                        <p class="grade">Marks: 818</p>
+                    </div>
+
+                    <div class="edu-card">
+                        <i class="fa-solid fa-book"></i>
+                        <h3>SSC</h3>
+                        <p class="institute">ZPP High School, Penugonda</p>
+                        <p class="duration">2018 - 2019</p>
+                        <p class="grade">CGPA: 8.3</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <h2 class="section-heading">Get In Touch</h2>
+                <p class="contact-intro">I'm currently looking for an Internship/ Job and I am open to discussing new
+                    opportunities. Feel free to reach out!</p>
+
+                <div class="contact-info-grid">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                    <a 
+                        href="mailto:sankarperugu@gmail.com?subject=Message from Sankar&body=Hello Sankar,%0D%0A%0D%0A[Your message here]"
+                        title="Send me an email"
+                    >
+                        Email
+                    </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-brands fa-github"></i>
+                        <h3>Github</h3>
+                        <p><a href="https://github.com/sankar637">Github</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/sankar-perugu-ab2520301/">linkedIn</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Sankar.web</h3>
+                <p>A CSE student focused on building clean, efficient, and scalable software solutions.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            <p>Copyright &copy; 2025 Divyam Kumar Choubey | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
